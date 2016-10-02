@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#22dddddd" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#bb3399ff" >
+
+        <ImageView
+            android:id="@+id/fh_tv_persons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/fh_group"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/fh_bt_comit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/fh_tv_persons"
+            android:background="@android:color/transparent"
+            android:text="返回"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="44dp"
+            android:layout_height="18dp"
+            android:layout_centerInParent="true"
+            android:text="群成员"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/found_et_persons"
+        android:layout_width="300dp"
+        android:layout_height="28dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/style_et_found_et_persons"
+        android:gravity="center"
+        android:hint="搜 索"
+        android:textSize="12sp" />
+
+    <ListView
+        android:id="@+id/listview_persons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff"
+        android:cacheColorHint="#77dddddd"
+        android:divider="#33dddddd"
+        android:dividerHeight="20dp"
+        android:fadingEdge="vertical"
+        android:fastScrollEnabled="true" >
+    </ListView>
+
+</LinearLayout>
